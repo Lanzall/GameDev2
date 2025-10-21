@@ -9,22 +9,22 @@ void PointerDemo::DoDemo()
 	int moviesReferenced = 97;
 	int feetScanned = 42;
 	std::cout << "Demo Working";
-	cFirstName = "John";
-	cLastName = "Kojimbo";
+	std::string cFirstName = "John";
+	std::string cLastName = "Kojimbo";
 	PassByValueDemo(moviesReferenced, feetScanned);
-	PassByRefDemo(moviesReferenced, feetScanned);
+	PassByRefDemo(cFirstName, cLastName);
 	UsePointersDemo();
 	MemLeakDemo();
 
 }
 void PointerDemo::PassByValueDemo(int one, int two)
 {
-	std::cout << "PassedByValue?";
+	std::cout << "\nPassedByValue?";
 }
-void PointerDemo::PassByRefDemo(int& one, int& two)
+void PointerDemo::PassByRefDemo(string &cFirstName, string &cLastName)
 {
 	cFirstName = "Hideo";
-	cout << "My name is" << cFirstName << " " << cLastName << ", creator of the " << cFirstName << "game!" << endl;
+	cout << "\nMy name is " << cFirstName << " " << cLastName << ", creator of the " << cFirstName << "game!" << endl;
 }
 void PointerDemo::UsePointersDemo()
 {
