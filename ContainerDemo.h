@@ -3,7 +3,11 @@
 
 class ContainerDemo
 {
+public:
+	void DoDemo();
 
 
+private:
+	void VectorDemo();
 };
 
